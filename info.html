@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>CRIA - Formulário de Contacto</title>
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,700&display=swap" rel="stylesheet">
+            
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/vegas.min.css" rel="stylesheet">
+
+        <link href="css/tooplate-barista.css" rel="stylesheet">
+
+    </head>
+    
+    <body class="reservation-page">
+                
+            <main>
+                <nav class="navbar navbar-expand-lg">                
+                    <div class="container">
+                        <a class="navbar-brand d-flex align-items-center" href="index.html">
+                            <img src="images/download.png" class="navbar-brand-image img-fluid">
+                        </a>
+        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+        
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-lg-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="index.html #section_1">CRIA</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="index.html #section_2">Sobre</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="servicos.html">Serviços</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-btn" href="posts.html #section_20">Publicações</a>
+                                </li>
+								
+								<li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_5">Testemunhos</a>
+                                </li>
+								
+                                <li class="nav-item">
+                                    <a class="nav-link click-scroll" href="#section_6">Contactos</a>
+                                </li>
+                            </ul>
+
+                            <!-- <div class="ms-lg-3">
+                                <a class="btn custom-btn custom-border-btn" href="info.html #section_2">
+                                    Mais informações
+                                    <i class="bi-arrow-up-right ms-2"></i>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </nav>
+                
+				<section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+
+                    <div class="container">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-10 col-12 mx-auto">
+                                
+                                <h1 style="font-size:400%;">Centro de Reabilitação, Intervenção e Aprendizagem</h1>
+                              
+							  <p class="a text-white>
+                                    O serviço <em>que complementa</em> as suas necessidades
+                                </p>
+								<div class="column align-items-center">
+                                <a class="btn custom-1btn smoothscroll me-2 mb-1" href="index.html #section_2">Sobre Nós</a>
+
+                                <a class="btn custom-1btn smoothscroll me-2 mb-1" href="index.html #section_3">Serviços</a>
+								</div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="hero-slides">
+						<video autoplay="" loop="" muted="" class="custom-video" poster="">
+							<source src="videos/homevideo.mp4" type="video/mp4">
+							</div>
+                </section>
+				
+                <section class="booking-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-20 col-12 mx-auto">
+                            <div class="booking-form-wrap">
+                                <div class="row">
+                                    <div class="col-lg-20 col-12 p-0">
+                                        <form class="custom-form booking-form" action="#" method="post" role="form">
+                                            <div class="text-center mb-4 pb-lg-2">
+                                                <h2 class="text-black">Pedido de Contacto</h2>
+                                            </div>
+												
+                                            <div class="booking-form-body">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-12">
+													
+													
+                                                        <input type="text" name="booking-form-name" id="booking-form-name" class="form-control" placeholder="Nome Completo" required>
+                                                    </div>
+
+                                                    <div class="col-lg-6 col-12">
+                                                        <input type="tel" class="form-control" name="booking-form-phone" placeholder="Contacto Telefónico" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
+                                                    </div>
+													
+													<div class="col-lg-12 col-12">
+														<input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="E-mail" required="">
+													</div>
+                                                    <div class="col-lg-12 col-12">
+                                                        <input type="text" name="booking-form-text" id="booking-form-text" class="form-control" placeholder="Assunto" required="">
+
+                                                        <textarea name="booking-form-message" rows="3" class="form-control" id="booking-form-message" placeholder="Escreva a sua mensagem (Optional)"></textarea>
+                                                    </div>
+
+                                                    <div class="col-lg-4 col-md-10 col-8 mx-auto mt-2">
+                                                        <button type="submit" class="form-control">Submeter</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+							
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+               <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-12 me-auto">
+                                <em class="text-black d-block mb-4">Localização</em>
+
+                                <strong class="text-black">
+                                    <i class="bi-geo-alt me-2"></i>
+                                    Lisboa
+                                </strong>
+
+                                <ul class="social-icon mt-4">
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link bi-instagram">
+                                        </a>
+                                    </li>
+        
+                                    <li class="social-icon-item">
+                                        <a href="https://" target="_new" class="social-icon-link bi-facebook">
+                                        </a>
+                                    </li>
+
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link bi-whatsapp">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+                                <em class="text-black d-block mb-4">Contactos</em>
+
+                                <p class="d-flex mb-1">
+                                    <strong class="me-2">Telefone:</strong>
+                                    <a href="tel: 305-240-9671" class="site-footer-link">
+                                        (+351) 
+                                        912 345 678
+                                    </a>
+                                </p>
+
+                                <p class="d-flex">
+                                    <strong class="me-2">Email:</strong>
+
+                                    <a href="mailto:cria.terapias@gmail.com" class="site-footer-link">
+                                        cria.terapias@gmail.com
+                                    </a>
+                                </p>
+                            </div>
+
+
+                            <div class="col-lg-5 col-12">
+                                <em class="text-black d-block mb-4">Horário de Funcionamento</em>
+
+                                <ul class="opening-hours-list">
+                                    <li class="d-flex">
+                                        2ª - 6ª
+                                        <span class="underline"></span>
+
+                                        <strong>8:30 - 18:00</strong>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        Sábado
+                                        <span class="underline"></span>
+
+                                        <strong>10:00 - 16:00</strong>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        Domingos e Feriados
+                                        <span class="underline"></span>
+
+                                        <strong>Fechado</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </footer>
+            </main>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/vegas.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
