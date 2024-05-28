@@ -843,7 +843,7 @@ div.mycontainer div p {
 }
 @media screen and (max-width: 991px) {
   .badge {
-    width: 50px;
+    width: 80px;
     font-size: 8px;
   }
 	
