@@ -1413,7 +1413,7 @@ article {
   }
 
   .hero-slides .custom-video {
-    width: fit-content;
+    min-width: 600px;
 }
 
 @media screen and (max-width: 767px) {
