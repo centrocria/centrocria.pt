@@ -732,7 +732,7 @@ strong {
   background-color: white;
   position: relative;
   overflow: hidden;
-  min-height: 620px;
+  min-height: fit-content;
   text-align: center;
 }
 
