@@ -726,66 +726,6 @@ strong {
   bottom: 0;
 }
 
-/*---------------------------------------
-  HERO        
------------------------------------------*/
-.hero-section {
-  background-color: white;
-  position: relative;
-  overflow: hidden;
-  min-height: 620px;
-  text-align: center;
-}
-
-
-@media screen and (min-width: 991px) {
-  .hero-section {
-    height: 100vh;
-  }
-}
-
-.hero-section h1 {
-  color: var(--white-color);
-}
-
-.small-text {
-  color: var(--secondary-color);
-}
-
-.hero-section .custom-border-btn {
-  border-color: transparent;
-}
-
-.hero-section .container {
-  position: relative;
-  z-index: 9;
-}
-
-.hero-slides {
-  width: fit-content;
-  height: max-content;
-  position: absolute !important;
-}
-
-.opening-hours-list {
-  margin: 0;
-  padding: 0;
-}
-
-.opening-hours-list li {
-  color: rgba(0, 0, 0, 0.75);
-  font-size: var(--btn-font-size);
-  font-weight: var(--font-weight-normal);
-  margin-bottom: 10px;
-}
-
-.opening-hours-list li .underline {
-  background-color: rgba(255, 255, 255, 0.75);
-  width: 35%;
-  height: 1px;
-  margin: auto;
-}
-
 
 /*---------------------------------------
   SOBRE              
