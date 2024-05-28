@@ -914,6 +914,10 @@ div.mycontainer div p {
   border-right: 10px solid var(--primary-color);
 }
 
+@media screen and (max-width: 991px) {
+  .badge::before {
+    display: none;
+  }
 /*---------------------------------------
   SERVICES        
 -----------------------------------------*/
