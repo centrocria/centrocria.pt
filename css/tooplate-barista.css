@@ -841,7 +841,7 @@ div.mycontainer div p {
   border-bottom: 10px solid transparent;
   border-right: 10px solid var(--primary-color);
 }
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 991px) {
   .badge {
     width: 80px;
     font-size: 8px;
