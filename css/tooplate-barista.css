@@ -1411,6 +1411,9 @@ article {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+  .hero-slides .custom-video {
+    width: fit-content;
 }
 
 @media screen and (max-width: 767px) {
