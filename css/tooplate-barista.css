@@ -918,10 +918,6 @@ div.mycontainer div p {
     width: 20px;
   }
 	
-@media screen and (max-width: 991px) {
-  .badge::before {
-    display: none;
-  }
 /*---------------------------------------
   SERVICES        
 -----------------------------------------*/
