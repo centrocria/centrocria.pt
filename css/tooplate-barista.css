@@ -761,7 +761,7 @@ strong {
 }
 
 .hero-slides {
-  width: 100%;
+  width: fit-content;
   height: max-content;
   position: absolute !important;
 }
