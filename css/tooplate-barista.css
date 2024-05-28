@@ -304,6 +304,7 @@ strong {
   line-height: normal;
   transition: all 0.3s;
   padding: 10px 28px;
+  width: 60%;
 }
 
 .custom-1btn {
