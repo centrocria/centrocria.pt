@@ -1,12 +1,18 @@
 //jquery-click-scroll
 //by syamsul'isul' Arifin
 
-var sectionArray = [1, 2, 3, 5, 6];
+var sections = {
+  0: "home",
+  1: "sobre",
+  2: "servicos",
+  3: "reviews",
+  4: "contacts",
+}
 
-$.each(sectionArray, function(index, value){
+$.each(sections, function(index, value){
 
      $(document).scroll(function(){
-         var offsetSection = $('#' + 'section_' + value).offset().top - 154;
+         var offsetSection = $('#' + value).offset().top - 154;
          var docScroll = $(document).scrollTop();
          var docScroll1 = docScroll + 1;
 
@@ -35,3 +41,4 @@ $(document).ready(function(){
     $('.navbar-nav .nav-item .nav-link').eq(0).addClass('active');
     $('.navbar-nav .nav-item .nav-link:link').eq(0).removeClass('inactive');
 });
+
