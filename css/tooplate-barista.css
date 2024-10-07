@@ -955,49 +955,37 @@ body {
   REVIEWS
 -----------------------------------------*/
 .reviews-section {
-  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(243,246,244));
+  background-color: white;
+  min-height: 620px;
+  padding-bottom: none;
 }
 
-.reviews-block {
-  background-color: #ffffff;
-  border-radius: var(--border-radius-medium);
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.feedback-image {
   position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  filter: contrast(100%);
 }
 
-.reviews-block .border-top {
-  border-top-color: rgba(255, 255, 255, 0.35) !important;
-}
-
-.reviews-block-image-wrap {
-  background-image: url('../images/feedback.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 30px;
-}
-
-.reviews-block-image {
-  border-radius: var(--border-radius-large);
-  width: 65px;
-  height: 65px;
+.feedback-image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin-right: 10px;
-}
-
-.reviews-block-info {
-  padding: 10px 10px;
-  allign: justify;
-}
-
-.reviews-block-info p {
-  font-size: var(--btn-font-size);
-  font-style: italic;
-  color: black;
-}
-
-.reviews-group i {
-  color: #F3F6F4;
 }
 
 /*---------------------------------------
@@ -1401,6 +1389,7 @@ article {
 }
 
 
+
 @media screen and (max-width: 578px) {
   .navbar .container,
   .sticky-wrapper.is-sticky .container {
@@ -1409,6 +1398,15 @@ article {
   }
 }
 
+   .feedback-image {
+     width: 80%;
+     height: auto;
+}
+   .feedback-text {
+     font-size: 14px;
+     padding: 8px;
+     bottom: 10px;
+}
 
 @media screen and (max-width: 480px) {
   h1 {
@@ -1462,4 +1460,13 @@ article {
   .timeline-container-right::before {
     top: 13px;
   }
+}
+  .feedback-image {
+     width: 90%;
+     height: auto;
+}
+   .feedback-text {
+     font-size: 12px;
+     padding: 6px;
+     bottom: 5px;
 }
