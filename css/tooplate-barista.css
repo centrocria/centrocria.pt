@@ -957,7 +957,7 @@ body {
 .reviews-section {
   background-color: white;
   min-height: 620px;
-  padding-bottom: none;
+  padding-top: none;
 }
 
 .swiper {
