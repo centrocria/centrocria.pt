@@ -952,6 +952,24 @@ body {
 
 
 /*---------------------------------------
+  EVENTOS               
+-----------------------------------------*/
+.imagem-evento {
+  width: 100%;         /* adapta-se ao container */
+  height: auto;        /* mantém a proporção */
+  max-width: 90%;      /* default para telemóveis e tablets */
+  margin: 0 auto;
+}
+
+/* Aumentar no desktop (Bootstrap lg ≥ 992px) */
+@media (min-width: 992px) {
+  .imagem-evento {
+    max-width: 500px;  /* define uma largura maior no desktop */
+  }
+}
+
+
+/*---------------------------------------
   REVIEWS
 -----------------------------------------*/
 .reviews-section {
