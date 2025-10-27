@@ -1,6 +1,5 @@
-
 /*---------------------------------------
-  CUSTOM PROPERTIES ( VARIABLES )
+  CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
@@ -36,19 +35,16 @@
   --font-weight-light:            300;
   --font-weight-normal:           400;
   --font-weight-bold:             700;
-
-  --navbar-padding-small:         5px 30px;
-  --navbar-padding:               15px 30px;
 }
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family);
+  font-family: var(--body-font-family); 
 }
 
 
 /*---------------------------------------
-  TYPOGRAPHY
+  TYPOGRAPHY               
 -----------------------------------------*/
 
 h2,
@@ -113,6 +109,7 @@ p.b {
   color: black;
   font-size: 17px;
   font-weight: var(--font-weight-light);
+  text-align: justify;
 }
 
 ul li {
@@ -121,7 +118,7 @@ ul li {
   font-weight: var(--font-weight-light);
 }
 
-a,
+a, 
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -144,7 +141,7 @@ strong {
 
 
 /*---------------------------------------
-  SECTION
+  SECTION               
 -----------------------------------------*/
 .section-padding {
   padding-top: 100px;
@@ -179,7 +176,7 @@ strong {
 
 
 /*---------------------------------------
-  TIMELINE
+  TIMELINE               
 -----------------------------------------*/
 .timeline {
   position: relative;
@@ -293,12 +290,9 @@ strong {
 
 
 /*---------------------------------------
-  CUSTOM BUTTON
+  CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   background: #999999;
   text-position: center;
   border: 2px solid transparent;
@@ -359,7 +353,7 @@ strong {
 
 
 /*---------------------------------------
-  NAVIGATION BAR & OFFCANVAS
+  NAVIGATION BAR & OFFCANVAS              
 -----------------------------------------*/
 .sticky-wrapper {
   position: absolute;
@@ -370,9 +364,9 @@ strong {
 }
 
 .sticky-wrapper.is-sticky .container {
-  background: rgba(245, 245, 245, 0.9);
+  background: rgba(245, 245, 245, 0.65);
   border-radius: var(--border-radius-medium);
-  padding: var(--navbar-padding)
+  padding: 15px 30px;
 }
 
 .navbar {
@@ -383,9 +377,9 @@ strong {
 }
 
 .navbar .container {
-  background: rgba(245, 245, 245, 0.75);
+  background: rgba(245, 245, 245, 0.65);
   border-radius: var(--border-radius-medium);
-  padding: var(--navbar-padding)
+  padding: 15px 30px;
 }
 
 .navbar-brand,
@@ -435,7 +429,7 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:hover {
   color: rgb(5, 5, 5);
 }
@@ -473,9 +467,9 @@ strong {
   position: relative;
 }
 
-.navbar .dropdown-item.active,
+.navbar .dropdown-item.active, 
 .navbar .dropdown-item:active,
-.navbar .dropdown-item:focus,
+.navbar .dropdown-item:focus, 
 .navbar .dropdown-item:hover {
   background: transparent;
   color: var(--link-hover-color);
@@ -543,7 +537,7 @@ strong {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background: var(--dark-color);
+  background: var(--white-color);
   transition: background 10ms 300ms ease;
   display: block;
   width: 30px;
@@ -559,7 +553,7 @@ strong {
   position: absolute;
   right: 0;
   left: 0;
-  background: var(--dark-color);
+  background: var(--white-color);
   width: 30px;
   height: 2px;
   content: '';
@@ -575,14 +569,13 @@ strong {
 
 
 /*---------------------------------------
-  HERO
+  HERO        
 -----------------------------------------*/
 .hero-section {
-  border-bottom-left-radius: var(--border-radius-medium);
-  border-bottom-right-radius: var(--border-radius-medium);
   background-color: white;
   position: relative;
   overflow: hidden;
+  min-height: 620px;
   text-align: center;
 }
 
@@ -598,6 +591,12 @@ strong {
   width: 0;
   height: 0;
   pointer-events: none;
+}
+
+@media screen and (min-width: 991px) {
+  .hero-section {
+    height: 100vh;
+  }
 }
 
 .hero-section h1 {
@@ -644,7 +643,7 @@ strong {
 
 
 /*---------------------------------------
-  ABOUT
+  ABOUT              
 -----------------------------------------*/
 .about-section {
   background-color: #ffffff;
@@ -656,6 +655,7 @@ strong {
 }
 
 .custom-video {
+  border-radius: var(--border-radius-medium);
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -681,10 +681,6 @@ strong {
 
 .about-section h6 {
   color: var(--secondary-color);
-}
-
-.about-section .custom-video {
-  border-radius: var(--border-radius-medium);
 }
 
 .team-block-wrap {
@@ -731,7 +727,7 @@ strong {
 
 
 /*---------------------------------------
-  SOBRE
+  SOBRE              
 -----------------------------------------*/
 .sobre-section {
   background-color: #ffffff;
@@ -783,7 +779,7 @@ div.mycontainer {
 }
 
 div.mycontainer div {
-  width:50%;
+  width:50%;  
   float:left;
 }
 
@@ -796,7 +792,7 @@ div.mycontainer div p {
 }
 
 /*---------------------------------------
-  OUR MENU
+  OUR MENU              
 -----------------------------------------*/
 .menu-section {
   background-image: url('../images/markus20.png');
@@ -845,7 +841,6 @@ div.mycontainer div p {
   position: relative;
   bottom: 4px;
   padding-bottom: 6px;
-  line-height: 18px;
 }
 
 .badge::before {
@@ -858,9 +853,9 @@ div.mycontainer div p {
   border-bottom: 10px solid transparent;
   border-right: 10px solid var(--primary-color);
 }
-
+	
 /*---------------------------------------
-  SERVICES
+  SERVICES        
 -----------------------------------------*/
 .services-container {
     display: flex;
@@ -952,31 +947,39 @@ body {
 
 
 /*---------------------------------------
-  EVENTOS               
+  REVIEWS              
 -----------------------------------------*/
-.imagem-evento {
-  width: 100%;         /* adapta-se ao container */
-  height: auto;        /* mantém a proporção */
-  max-width: 90%;      /* default para telemóveis e tablets */
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
+  position: relative;
 }
 
-/* Aumentar no desktop (Bootstrap lg ≥ 992px) */
-@media (min-width: 992px) {
-  .imagem-evento {
-    max-width: 500px;  /* define uma largura maior no desktop */
-  }
+.carousel-item {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
 }
 
+.depoimento {
+  font-style: italic;
+}
 
-/*---------------------------------------
-  REVIEWS
------------------------------------------*/
+.nome {
+  font-weight: bold;
+  color: #2A3D8F;
+}
+
 .reviews-section {
   background-color: white;
   min-height: 620px;
-  padding-top: 10 px;
-  padding-bottom: 0;
 }
 
 .swiper {
@@ -1007,8 +1010,9 @@ body {
   object-fit: cover;
 }
 
+
 /*---------------------------------------
-  BOOKING SECTION
+  BOOKING SECTION              
 -----------------------------------------*/
 .booking-section {
   background-image: url('../images/semtitulo.png');
@@ -1071,7 +1075,7 @@ body {
 
 
 /*---------------------------------------
-  CONTACT
+  CONTACT               
 -----------------------------------------*/
 .contact-section {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(245, 245, 245, 1));
@@ -1123,7 +1127,7 @@ body {
 }
 
 /*---------------------------------------
-  PUBLICACOES
+  PUBLICACOES               
 -----------------------------------------*/
 .posts-section {
   position: relative;
@@ -1144,7 +1148,7 @@ article {
 }
 
 /*---------------------------------------
-  CUSTOM FORM
+  CUSTOM FORM               
 -----------------------------------------*/
 .custom-form .form-control {
   color: black;
@@ -1209,7 +1213,7 @@ article {
 
 
 /*---------------------------------------
-  SITE FOOTER
+  SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
   background-color: rgba(255, 255, 255, 0.75);
@@ -1247,9 +1251,78 @@ article {
 	color: black;
 }
 
+/*---------------------------------------
+  EVENTOS               
+-----------------------------------------*/
+.imagem-evento {
+  width: 100%;         /* adapta-se ao container */
+  height: auto;        /* mantém a proporção */
+  max-width: 90%;      /* default para telemóveis e tablets */
+  margin: 0 auto;
+}
+
+/* Aumentar no desktop (Bootstrap lg ≥ 992px) */
+@media (min-width: 992px) {
+  .imagem-evento {
+    max-width: 500px;  /* define uma largura maior no desktop */
+  }
+}
+
+/* Contêiner principal dos botões */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+/* Primeiro botão — gradiente cinzento com hover laranja */
+.btn-cria-3 {
+  background: linear-gradient(180deg, #404040, #999999);
+  color: #fff;
+  padding: 15px 36px;
+  border-radius: 18px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  display: inline-block;
+  transition: all 0.35s ease;
+}
+.btn-cria-3:hover {
+  background: linear-gradient(150deg, #ffbf80, #ff9933);
+  box-shadow: 0 5px 16px rgba(255, 153, 51, 0.3);
+  transform: scale(1.03);
+}
+
+/* Segundo botão — gradiente azul com hover azul-claro */
+.btn-cria-4 {
+  background: linear-gradient(180deg, #404040, #999999);
+  color: #fff;
+  padding: 15px 36px;
+  border-radius: 18px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  display: inline-block;
+  transition: all 0.35s ease;
+}
+.btn-cria-4:hover {
+  background: linear-gradient(150deg, #5BA3F0, #A8D0FF);
+  box-shadow: 0 5px 16px rgba(42, 103, 177, 0.35);
+  transform: scale(1.03);
+}
+
+.expandir-coluna {
+    max-width: 900px; /* ou qualquer largura que quiser */
+    width: 100%; /* garante que ocupe a largura permitida */
+}
 
 /*---------------------------------------
-  SOCIAL ICON
+  SOCIAL ICON               
 -----------------------------------------*/
 .social-icon {
   margin: 0;
@@ -1287,26 +1360,11 @@ article {
 
 
 /*---------------------------------------
-  RESPONSIVE STYLES
+  RESPONSIVE STYLES               
 -----------------------------------------*/
-@media screen and (min-width: 1201px) {
-  .hero-section {
-    min-height: 620px;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   h1 {
     font-size: 62px;
-  }
-
-  .hero-section {
-    min-height: 500px;
-  }
-
-  .navbar .container,
-  .sticky-wrapper.is-sticky .container {
-    padding: var(--navbar-padding-small);
   }
 }
 
@@ -1381,13 +1439,14 @@ article {
 
   .hero-slides .custom-video {
     min-width: 1100px;
-  }
 }
+ 
 
 @media screen and (max-width: 767px) {
   .custom-btn {
     font-size: 14px;
     padding: 12px 20px;
+    margin-left: 80px;
   }
 
   .menu-block-wrap,
@@ -1401,13 +1460,6 @@ article {
   .reviews-block-info {
     padding: 20px;
   }
-
-  .hero-section {
-    padding: 0;
-  }
-}
-
-
 
 @media screen and (max-width: 578px) {
   .navbar .container,
@@ -1479,7 +1531,7 @@ article {
   .timeline-container-right::before {
     top: 13px;
   }
-}
+
   .feedback-image {
      width: 90%;
      height: auto;
@@ -1488,4 +1540,16 @@ article {
      font-size: 12px;
      padding: 6px;
      bottom: 5px;
+}
+
+@media (max-width: 600px) {
+  .btn-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .btn-cria-3,
+  .btn-cria-4 {
+    width: 100%;
+    text-align: center;
+  }
 }
