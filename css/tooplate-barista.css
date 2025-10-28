@@ -346,8 +346,8 @@ strong {
 }
 
 .container .home-btn:hover {
-   background-color: #ffffff;
-      color: black;
+  background-color: #ffffff;
+  color: black;
   border: #f2f2f2;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
@@ -1673,6 +1673,7 @@ button:hover {
     text-align: center;
   }
 }
+
 
 
 
