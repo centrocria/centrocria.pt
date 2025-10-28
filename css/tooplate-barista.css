@@ -450,9 +450,9 @@ strong {
   transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-link.active, 
-.navbar-nav .nav-link:hover {
-  color: rgba (0, 0, 0, 0.8);
+.navbar-nav .nav-link.active {
+  color: #222; 
+  font-weight: 600;
 }
 
 .navbar .dropdown-menu {
@@ -1692,6 +1692,7 @@ button:hover {
     text-align: center;
   }
 }
+
 
 
 
