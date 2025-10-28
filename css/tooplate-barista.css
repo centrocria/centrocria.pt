@@ -800,17 +800,17 @@ div.mycontainer div p {
   OUR MENU              
 -----------------------------------------*/
 .menu-section {
-  background-image: url('../images/markus20.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-opacity: 0.3;
+  background: transparent; /* Sem imagem de fundo */
+  padding: 60px 0;
 }
 
 .menu-block-wrap {
-  background: #f3f6f4;
-  border-radius: var(--border-radius-medium);
+  background: rgba(255, 255, 255, 0.3); /* branco semi-transparente */
+  border-radius: 16px;
   padding: 30px;
-  opacity: 0.8;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px); /* 🔥 efeito vidro fosco */
+  -webkit-backdrop-filter: blur(10px); /* compatibilidade com Safari */
 }
 
 .menu-block .border-top {
@@ -822,7 +822,9 @@ div.mycontainer div p {
 }
 
 .menu-block small {
-  color: #999999;
+  color: #555; /* texto mais escuro e legível */
+  text-align: justify; /* texto justificado */
+  display: block;
 }
 
 .menu-block strong {
@@ -858,6 +860,7 @@ div.mycontainer div p {
   border-bottom: 10px solid transparent;
   border-right: 10px solid var(--primary-color);
 }
+
 	
 /*---------------------------------------
   SERVICES        
@@ -1673,6 +1676,7 @@ button:hover {
     text-align: center;
   }
 }
+
 
 
 
