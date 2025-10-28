@@ -1173,7 +1173,7 @@ article {
 .custom-form .form-control:hover,
 .custom-form .form-control:focus {
   background: white;
-  border-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .custom-form .form-label {
@@ -1677,6 +1677,7 @@ button:hover {
     text-align: center;
   }
 }
+
 
 
 
