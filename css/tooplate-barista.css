@@ -1317,9 +1317,124 @@ article {
 }
 
 .expandir-coluna {
-    max-width: 900px; /* ou qualquer largura que quiser */
+    max-width: 1200px; /* ou qualquer largura que quiser */
     width: 100%; /* garante que ocupe a largura permitida */
 }
+
+.texto-resumo {
+        max-width: 1200px;
+        width: 100%;
+        background-color: #ffffff; /* Fundo branco para o "retângulo" */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra suave para destacar */
+        padding: 40px; /* Espaço interno para afastar o conteúdo das bordas */
+    }
+
+    .texto-resumo > p:first-child {
+        max-width: 900px;
+        margin: 0 auto 30px auto; /* Centraliza o primeiro parágrafo */
+        text-align: justify;
+        line-height: 1.6;
+        padding-left: 20px; /* Adiciona padding para alinhar com o conteúdo abaixo */
+        padding-right: 20px;
+    }
+ 
+ .conteudo-extra {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+    }
+
+  .conteudo-extra.show {
+      max-height: 2000px; /* valor suficientemente grande para o teu conteúdo */
+    }
+
+ button {
+  background-color: #fff;
+   border: 1px solid #dbdbdb;
+   border-radius: .375em;
+   color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+   width: fit-content;
+    margin: 20px auto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    }
+
+button:hover {
+      background-color: #ffffff;
+  border: #f2f2f2;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);}
+    }
+
+.linha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    /* Linha de imagem + texto */
+    .linha {
+        display: flex;
+        align-items: flex-start; /* **MELHORIA**: Alinha o topo do texto com o topo da imagem */
+        justify-content: space-between; /* Distribui o espaço entre imagem e texto */
+        margin-bottom: 40px;
+        padding: 0 20px; /* Padding horizontal consistente dentro do contêiner */
+        gap: 30px; /* Espaçamento entre texto e imagem */
+    }
+
+    .linha.invertida {
+        flex-direction: row-reverse;
+    }
+
+    .linha img {
+        width: 35%; /* **MELHORIA**: Usa porcentagem para que o tamanho se ajuste ao contêiner */
+        height: auto;
+        /* As margens laterais foram substituídas pelo 'gap' no .linha */
+        flex-shrink: 0;
+    }
+
+    .linha .texto-justificado {
+        width: 55%; /* O restante da largura para o texto */
+        text-align: justify;
+    }
+    
+    .texto-justificado h3 {
+        font-size: 28px; /* Títulos ligeiramente maiores */
+        font-weight: 700;
+        margin-top: 0; /* **MELHORIA**: Remove a margem superior do título para alinhamento */
+        margin-bottom: 15px;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .texto-justificado p {
+        margin-bottom: 1em;
+        line-height: 1.6;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .conteudo-principal {
+            padding: 20px 0; /* Reduz padding lateral em mobile */
+        }
+        .linha, .linha.invertida {
+            flex-direction: column;
+            align-items: center;
+            padding: 0 10px;
+        }
+        .linha img {
+            width: 90%;
+            margin-bottom: 20px;
+        }
+        .linha .texto-justificado {
+            width: 100%;
+        }
+    }
 
 /*---------------------------------------
   SOCIAL ICON               
@@ -1553,3 +1668,4 @@ article {
     text-align: center;
   }
 }
+
