@@ -846,16 +846,17 @@ div.mycontainer div p {
   color: #5B5B5B;
   font-size: 12px;
   position: relative;
-  bottom: 4px;
+  top: 1px;
+  bottom: 0;
   padding-bottom: 6px;
 }
 
 .badge::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 1px;
   bottom: 0;
-  left: -5px;
+  left: -8px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 10px solid rgba(0, 0, 0, 0.11);
@@ -1676,6 +1677,7 @@ button:hover {
     text-align: center;
   }
 }
+
 
 
 
