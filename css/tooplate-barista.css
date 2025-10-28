@@ -368,11 +368,31 @@ strong {
   left: 0;
 }
 
-.sticky-wrapper.is-sticky .container {
-  background: rgba(245, 245, 245, 0.65);
+.sticky-wrapper.is-sticky .container,
+.navbar.sticky .container {
+  background: rgba(245, 245, 245, 0.95);
   border-radius: var(--border-radius-medium);
   padding: 15px 30px;
+  transition: background 0.3s ease;
 }
+
+.sticky-wrapper.is-sticky .navbar-brand,
+.sticky-wrapper.is-sticky .navbar-brand:hover,
+.navbar.sticky .navbar-brand,
+.navbar.sticky .navbar-brand:hover {
+  color: #222; 
+}
+
+.sticky-wrapper.is-sticky .nav-link,
+.navbar.sticky .nav-link {
+  color: #333;
+}
+
+.sticky-wrapper.is-sticky .nav-link:hover,
+.navbar.sticky .nav-link:hover {
+  color: var(--secondary-color); /* destaque ao passar mouse */
+}
+
 
 .navbar {
   background: transparent;
@@ -382,7 +402,7 @@ strong {
 }
 
 .navbar .container {
-  background: rgba(245, 245, 245, 0.65);
+  background: rgba(245, 245, 245, 0.8);
   border-radius: var(--border-radius-medium);
   padding: 15px 30px;
 }
@@ -425,18 +445,14 @@ strong {
   padding: 10px;
 }
 
-.navbar-nav .nav-link {
-  display: inline-block;
-  color: #5B5B5B;
-  font-size: var(--menu-font-size);
-  font-weight: var(--font-weight-bold);
-  padding-top: 15px;
-  padding-bottom: 15px;
+.navbar .nav-link,
+.navbar .navbar-brand {
+  transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:hover {
-  color: rgb(5, 5, 5);
+  color: rgba (0, 0, 0, 0.8);
 }
 
 .navbar .dropdown-menu {
@@ -571,7 +587,6 @@ strong {
 .navbar-toggler .navbar-toggler-icon::after {
   top: 8px;
 }
-
 
 /*---------------------------------------
   HERO        
@@ -1677,6 +1692,7 @@ button:hover {
     text-align: center;
   }
 }
+
 
 
 
