@@ -1329,8 +1329,8 @@ article {
         padding: 40px; /* Espaço interno para afastar o conteúdo das bordas */
     }
 
-    .texto-resumo > p:first-child {
-        max-width: 900px;
+  .texto-resumo > p:first-child {
+        max-width: 1200px;
         margin: 0 auto 30px auto; /* Centraliza o primeiro parágrafo */
         text-align: justify;
         line-height: 1.6;
@@ -1668,4 +1668,5 @@ button:hover {
     text-align: center;
   }
 }
+
 
