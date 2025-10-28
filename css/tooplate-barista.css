@@ -842,7 +842,7 @@ div.mycontainer div p {
 }
 
 .badge {
-  background-color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.11);
   color: #5B5B5B;
   font-size: 12px;
   position: relative;
@@ -858,7 +858,7 @@ div.mycontainer div p {
   left: -5px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 10px solid var(--primary-color);
+  border-right: 10px solid rgba(0, 0, 0, 0.11);
 }
 
 	
@@ -1676,6 +1676,7 @@ button:hover {
     text-align: center;
   }
 }
+
 
 
 
