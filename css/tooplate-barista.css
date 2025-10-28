@@ -293,17 +293,25 @@ strong {
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-  background: #999999;
-  text-position: center;
-  border: 2px solid transparent;
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-size: var(--btn-font-size);
-  font-weight: var(--font-weight-bold);
-  line-height: normal;
-  transition: all 0.3s;
-  padding: 10px 28px;
-  width: 60%;
+  background-color: transparent;
+  color: #222; /* texto escuro */
+  border: 2px solid #222; /* borda escura */
+  border-radius: 9999px; /* totalmente redondo */
+  padding: 12px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: inline-block;
+  width: 300px;
+}
+
+/* Efeito hover */
+.custom-btn:hover {
+  background-color: #fff;
+  border-color: #ccc; /* borda cinzenta */
+  color: #222; /* texto mantém-se escuro */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 .btn-group {
@@ -343,35 +351,9 @@ strong {
   border: #f2f2f2;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
+
 .container .btn-group .button:not(:last-child) {
   border-right: none; /* Prevent double borders */
-}
-
-
-.custom-btn:hover {
-  background: var(--custom-btn-bg-hover-color);
-  color: white;
-}
-
-.custom-border-btn {
-  background: transparent;
-  border: 2px solid var(--dark-color);
-  color: var(--dark-color);
-}
-
-.custom-border-btn:hover {
-  background: white;
-  border: 2px solid var(--secondary-color);
-  color: var(--secondary-color);
-}
-
-.custom-btn-bg-white {
-  border-color: var(--dark-color);
-  color: var(--dark-color);
-}
-
-.custom-btn-italic {
-  font-style: italic;
 }
 
 
@@ -1691,6 +1673,7 @@ button:hover {
     text-align: center;
   }
 }
+
 
 
 
