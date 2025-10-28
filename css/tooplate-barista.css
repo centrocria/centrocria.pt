@@ -320,10 +320,10 @@ strong {
 }
 
 .home-btn {
-  background-color: rgb(240, 240, 240, 90%);
+  background-color: rgb(240, 240, 240, 0.5);
   border: 1px solid #f9f9f9;
   border-radius: 10px;
-  color: black;
+  color: rgba(0, 0, 3, 0.77);
   padding: 10px 14px;
   text-align: center;
   text-decoration: none;
@@ -1677,6 +1677,7 @@ button:hover {
     text-align: center;
   }
 }
+
 
 
 
