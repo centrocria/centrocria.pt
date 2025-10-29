@@ -345,6 +345,7 @@ strong {
   text-align: center;
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .container .home-btn:hover {
@@ -1694,6 +1695,7 @@ button:hover {
     text-align: center;
   }
 }
+
 
 
 
