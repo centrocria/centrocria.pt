@@ -343,6 +343,8 @@ strong {
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
+  display: flex;
+  gap: 20px;
 }
 
 .container .home-btn:hover {
@@ -1692,6 +1694,7 @@ button:hover {
     text-align: center;
   }
 }
+
 
 
 
