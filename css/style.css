@@ -1289,6 +1289,71 @@ b, strong {
   color: var(--color-text-light);
 }
 
+/* --- Iniciativas in-page navigation --- */
+.iniciativas-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.875rem;
+  margin: 0 auto 3.5rem;
+}
+
+.iniciativas-nav__item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.75rem 1.75rem;
+  background: var(--color-white);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.iniciativas-nav__item:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  color: var(--color-white);
+}
+
+.iniciativas-nav__label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--color-primary);
+  line-height: 1;
+  transition: color var(--transition);
+}
+
+.iniciativas-nav__item:hover .iniciativas-nav__label {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.iniciativas-nav__name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-dark);
+  line-height: 1.2;
+  transition: color var(--transition);
+}
+
+.iniciativas-nav__item:hover .iniciativas-nav__name {
+  color: var(--color-white);
+}
+
+/* Give scroll targets breathing room under the fixed navbar */
+.evento-block {
+  scroll-margin-top: calc(var(--nav-height) + 1.5rem);
+}
+
+/* --- Evento blocks --- */
 .evento-block {
   padding: 4rem 0;
 }
