@@ -1293,8 +1293,9 @@ b, strong {
   padding: 4rem 0;
 }
 
-.evento-block:first-of-type {
-  border-bottom: 1px solid var(--color-border);
+.evento-block + .evento-block {
+  border-top: 3px solid var(--color-primary-light);
+  margin-top: 1rem;
 }
 
 .evento-block__content {
