@@ -37,6 +37,7 @@
           <a href="index.html#home">CRIA</a>
           <a href="sobre.html#sobre">Sobre</a>
           <a href="servicos.html#servicos">Serviços</a>
+          <a href="eventos.html#atual">Iniciativas</a>
           <a href="index.html#reviews">Testemunhos</a>
           <a href="#contactos">Contactos</a>
         </div>
@@ -47,15 +48,16 @@
           <span></span>
         </button>
       </div>
-
-      <div class="navbar__mobile" role="dialog" aria-label="Menu de navegação">
-        <a href="index.html#home">CRIA</a>
-        <a href="sobre.html#sobre">Sobre</a>
-        <a href="servicos.html#servicos">Serviços</a>
-        <a href="index.html#reviews">Testemunhos</a>
-        <a href="#contactos">Contactos</a>
-      </div>
     </nav>
+
+    <div class="navbar__mobile" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+      <a href="index.html#home">CRIA</a>
+      <a href="sobre.html#sobre">Sobre</a>
+      <a href="servicos.html#servicos">Serviços</a>
+      <a href="eventos.html#atual">Iniciativas</a>
+      <a href="index.html#reviews">Testemunhos</a>
+      <a href="#contactos">Contactos</a>
+    </div>
 
     <main>
       <!-- Hero Section -->
@@ -251,53 +253,87 @@
       <section class="section testimonials" id="reviews">
         <div class="container">
           <div class="section-header fade-in">
-            <em>Feedback</em>
             <h2>Testemunhos</h2>
           </div>
 
-          <div class="testimonials__grid">
-            <div class="testimonial-card fade-in">
-              <div class="testimonial-card__header">
-                <img src="images/reviews/avatar1.png" alt="Margarida V." class="testimonial-card__avatar">
-                <div class="testimonial-card__info">
-                  <h4>Margarida V.</h4>
-                  <em>Professora</em>
-                  <span class="testimonial-service">Intervenção em Contexto Escolar</span>
-                </div>
-              </div>
-              <div class="testimonial-card__quote">
-                <p>Sou professora numa escola onde a equipa CRIA acompanha há já uns anos alguns alunos.
-São uma equipa maravilhosa! Têm desenvolvido um trabalho excecional do qual resulta uma evolução extremamente positiva nas crianças, tanto no domínio pessoal/social como no domínio académico.
-Praticam uma avaliação contínua dos progressos das crianças, destacando as suas potencialidades/necessidades e adequando objetivos e estratégias. Esta avaliação é partilhada e analisada em conjunto com a escola e a família.
-Desenvolvem um trabalho em parceria com os professores, ajudando-nos de forma incondicional a fazer o melhor pelas crianças (Não apenas as crianças que apoiam diretamente, mas todos os alunos da turma.) Estão integradas na escola, interagindo com todos os docentes, não docentes e alunos. Fazem parte da nossa "família"!
-Tenho ainda de destacar o excelente trabalho que desenvolvem com as famílias.</p>
-              </div>
-            </div>
+          <div class="carousel fade-in">
+            <div class="carousel__track">
 
-            <div class="testimonial-card fade-in">
-              <div class="testimonial-card__header">
-                <img src="images/reviews/avatar3.png" alt="Colaborador" class="testimonial-card__avatar">
-                <div class="testimonial-card__info">
-                  <h4>Colaborador</h4>
+              <div class="carousel__slide">
+                <div class="testimonial-card" data-length="long">
+                  <svg class="testimonial-card__quote-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+                  <p class="testimonial-card__text">Sou professora numa escola onde a equipa CRIA acompanha há já uns anos alguns alunos. São uma equipa maravilhosa! Têm desenvolvido um trabalho excecional do qual resulta uma evolução extremamente positiva nas crianças, tanto no domínio pessoal/social como no domínio académico. Praticam uma avaliação contínua dos progressos das crianças, destacando as suas potencialidades/necessidades e adequando objetivos e estratégias. Esta avaliação é partilhada e analisada em conjunto com a escola e a família. Desenvolvem um trabalho em parceria com os professores, ajudando-nos de forma incondicional a fazer o melhor pelas crianças (Não apenas as crianças que apoiam diretamente, mas todas os alunos da turma.) Estão integradas na escola, interagindo com todos os docentes, não docentes e alunos. Fazem parte da nossa "família".) Tenho ainda de destacar o excelente trabalho que desenvolvem com as famílias.</p>
+                  <div class="testimonial-card__footer">
+                    <span class="testimonial-card__author">Margarida</span>
+                    <span class="testimonial-card__role">Intervenção em Contexto Escolar</span>
+                  </div>
                 </div>
               </div>
-              <div class="testimonial-card__quote">
-                <p>Desde o trabalho lado a lado com as famílias e à inclusão dos diferentes contextos dos jovens, o que mais me fascina no CRIA é o compromisso, valorização e empenho na evolução de cada criança! </p>
-              </div>
-            </div>
 
-            <div class="testimonial-card fade-in">
-              <div class="testimonial-card__header">
-                <img src="images/reviews/avatar2.png" alt="Renata C." class="testimonial-card__avatar">
-                <div class="testimonial-card__info">
-                  <h4>Renata C.</h4>
-                  <em>Educadora</em>
-                  <span class="testimonial-service">Intervenção em Contexto Escolar</span>
+              <div class="carousel__slide">
+                <div class="testimonial-card">
+                  <svg class="testimonial-card__quote-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+                  <p class="testimonial-card__text">Desde o trabalho lado a lado com as famílias e à inclusão dos diferentes contextos dos jovens, o que mais me fascina no CRIA é o compromisso, valorização e empenho na evolução de cada criança!</p>
+                  <div class="testimonial-card__footer">
+                    <span class="testimonial-card__author">A.</span>
+                    <span class="testimonial-card__role">Colaborador</span>
+                  </div>
                 </div>
               </div>
-              <div class="testimonial-card__quote">
-                <p>Tive a oportunidade de trabalhar diariamente com as profissionais do CRIA e é de valorizar a dedicação, qualidade e profissionalismo das mesmas. A equipa é muito organizada e eficiente em planear, executar, analisar e rever práticas, quando necessário, de forma a priorizar sempre o bem-estar e a evolução de suas crianças.</p>
+
+              <div class="carousel__slide">
+                <div class="testimonial-card" data-length="long">
+                  <svg class="testimonial-card__quote-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+                  <p class="testimonial-card__text">O CRIA, em especial as suas proprietárias, tem realizado um trabalho incansável, apaixonado e essencial para o desenvolvimento do nosso filho. O acompanhamento diário que ele recebe tem feito uma diferença extraordinária em sua vida. A atenção, o carinho e a expertise do CRIA não apenas ajudam no crescimento dele, mas também nos dão a tranquilidade de saber que ele está em boas mãos. O impacto positivo que vocês têm na vida das crianças e suas famílias é inestimável. Vocês são, sem dúvida, peças fundamentais nesse processo e não poderíamos estar mais agradecidos por tudo que fazem. Continuem com esse trabalho maravilhoso que transforma vidas e proporciona um futuro melhor para nossos filhos.</p>
+                  <div class="testimonial-card__footer">
+                    <span class="testimonial-card__author">Patrícia</span>
+                    <span class="testimonial-card__role">Família</span>
+                  </div>
+                </div>
               </div>
+
+              <div class="carousel__slide">
+                <div class="testimonial-card">
+                  <svg class="testimonial-card__quote-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+                  <p class="testimonial-card__text">Tive a oportunidade de trabalhar diariamente com as profissionais do CRIA e é de valorizar a dedicação, qualidade e profissionalismo das mesmas. A equipa é muito organizada e eficiente em planear, executar, analisar e rever práticas, quando necessário, de forma a priorizar sempre o bem-estar e a evolução de suas crianças.</p>
+                  <div class="testimonial-card__footer">
+                    <span class="testimonial-card__author">Renata</span>
+                    <span class="testimonial-card__role">Intervenção em Contexto Escolar</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel__slide">
+                <div class="testimonial-card">
+                  <svg class="testimonial-card__quote-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+                  <p class="testimonial-card__text">Só temos elogios a toda equipa do Cria pelo excelente trabalho que vem sendo feito com a nossa filha.</p>
+                  <div class="testimonial-card__footer">
+                    <span class="testimonial-card__author">Giselle</span>
+                    <span class="testimonial-card__role">Família</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel__slide">
+                <div class="testimonial-card" data-length="long">
+                  <svg class="testimonial-card__quote-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+                  <p class="testimonial-card__text">O CRIA tem sido fundamental no desenvolvimento do nosso filho, pela dedicação constante e muito atenta da Sónia e da Mariana que nunca desistem apesar das dificuldades e são as primeiras a realçar as capacidades do João mesmo quando os pais e a escola não acreditam que se possa ir mais longe. É muito importante poder acreditar e lutar, não baixar os braços e acreditar no futuro sempre melhor e sem limites para as nossas crianças. Muito obrigada CRIA! Não sei o que faríamos sem vocês!</p>
+                  <div class="testimonial-card__footer">
+                    <span class="testimonial-card__author">S.</span>
+                    <span class="testimonial-card__role">Família</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="carousel__nav">
+              <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <div class="carousel__dots"></div>
+              <button class="carousel__btn carousel__btn--next" aria-label="Seguinte">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
             </div>
           </div>
         </div>
@@ -357,7 +393,10 @@ Tenho ainda de destacar o excelente trabalho que desenvolvem com as famílias.</
               <a href="https://www.instagram.com/centro.cria" aria-label="Instagram" target="_blank" rel="noopener">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               </a>
-              <a href="https://www.linkedin.com/company/cria-centro-de-reabilita%C3%A7%C3%A3o-interven%C3%A7%C3%A3o-e-aprendizagem" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <a href="https://www.facebook.com/people/CRIA-Centro-de-Reabilita%C3%A7%C3%A3o-Interven%C3%A7%C3%A3o-e-Aprendizagem/61582486635142/?sk=about" aria-label="Facebook" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/company/cria-centro-de-reabilita%C3%A7%C3%A3o-interven%C3%A7%C3%A3o-e-aprendizagem" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
               </a>
             </div>
@@ -372,7 +411,7 @@ Tenho ainda de destacar o excelente trabalho que desenvolvem com as famílias.</
             </div>
             <div class="footer__contact-item">
               <strong>Email:</strong>
-              <a href="mailto:cria.terapias@gmail.com">cria.terapias@gmail.com</a>
+              <a href="mailto:geral@centrocria.pt">geral@centrocria.pt</a>
             </div>
           </div>
 

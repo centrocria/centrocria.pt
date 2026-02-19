@@ -37,6 +37,7 @@
           <a href="index.html#home">CRIA</a>
           <a href="sobre.html#sobre">Sobre</a>
           <a href="servicos.html#servicos">Serviços</a>
+          <a href="eventos.html#atual">Iniciativas</a>
           <a href="index.html#reviews">Testemunhos</a>
           <a href="#contactos">Contactos</a>
         </div>
@@ -47,15 +48,16 @@
           <span></span>
         </button>
       </div>
-
-      <div class="navbar__mobile" role="dialog" aria-label="Menu de navegação">
-        <a href="index.html#home">CRIA</a>
-        <a href="sobre.html#sobre">Sobre</a>
-        <a href="servicos.html#servicos">Serviços</a>
-        <a href="index.html#reviews">Testemunhos</a>
-        <a href="#contactos">Contactos</a>
-      </div>
     </nav>
+
+    <div class="navbar__mobile" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+      <a href="index.html#home">CRIA</a>
+      <a href="sobre.html#sobre">Sobre</a>
+      <a href="servicos.html#servicos">Serviços</a>
+      <a href="eventos.html#atual">Iniciativas</a>
+      <a href="index.html#reviews">Testemunhos</a>
+      <a href="#contactos">Contactos</a>
+    </div>
 
     <main>
       <!-- Hero Section -->
@@ -86,7 +88,7 @@
           </div>
 
           <!-- Service 1: Intervenção Transdisciplinar -->
-          <div class="service-detail fade-in">
+          <div class="service-detail fade-in" id="intervencao-transdisciplinar">
             <div class="service-detail__image">
               <img src="images/services/segunda.jpg" alt="Intervenção Transdisciplinar">
             </div>
@@ -98,7 +100,7 @@
           </div>
 
           <!-- Service 2: Intervenção em Contexto Escolar -->
-          <div class="service-detail fade-in">
+          <div class="service-detail fade-in" id="contexto-escolar">
             <div class="service-detail__image">
               <img src="images/services/escola.jpg" alt="Intervenção em Contexto Escolar">
             </div>
@@ -110,7 +112,7 @@
           </div>
 
           <!-- Service 3: Autonomia e Funcionalidade -->
-          <div class="service-detail fade-in">
+          <div class="service-detail fade-in" id="autonomia-funcionalidade">
             <div class="service-detail__image">
               <img src="images/services/treinofuncional.jpg" alt="Autonomia e Funcionalidade">
             </div>
@@ -122,7 +124,7 @@
           </div>
 
           <!-- Service 4: Acompanhamento Psicopedagógico -->
-          <div class="service-detail fade-in">
+          <div class="service-detail fade-in" id="acompanhamento-psicopedagogico">
             <div class="service-detail__image">
               <img src="images/services/acomppedagogico.jpg" alt="Acompanhamento Psicopedagógico">
             </div>
@@ -134,7 +136,7 @@
           </div>
 
           <!-- Service 5: Psicologia -->
-          <div class="service-detail fade-in">
+          <div class="service-detail fade-in" id="psicologia">
             <div class="service-detail__image">
               <img src="images/services/psicologia.jpg" alt="Psicologia">
             </div>
@@ -146,7 +148,7 @@
           </div>
 
           <!-- Service 6: Psicomotricidade -->
-          <div class="service-detail fade-in">
+          <div class="service-detail fade-in" id="psicomotricidade">
             <div class="service-detail__image">
               <img src="images/services/psicomotricidade.jpg" alt="Psicomotricidade">
             </div>
@@ -158,7 +160,7 @@
           </div>
 
           <!-- Service 7: Terapia da Fala -->
-          <div class="service-detail fade-in">
+          <div class="service-detail fade-in" id="terapia-fala">
             <div class="service-detail__image">
               <img src="images/services/fala.jpg" alt="Terapia da Fala">
             </div>
@@ -170,7 +172,7 @@
           </div>
 
           <!-- Service 8: Aconselhamento Parental -->
-          <div class="service-detail fade-in">
+          <div class="service-detail fade-in" id="aconselhamento-parental">
             <div class="service-detail__image">
               <img src="images/services/parental.jpg" alt="Aconselhamento Parental">
             </div>
@@ -242,7 +244,10 @@
               <a href="https://www.instagram.com/centro.cria" aria-label="Instagram" target="_blank" rel="noopener">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               </a>
-              <a href="https://www.linkedin.com/company/cria-centro-de-reabilita%C3%A7%C3%A3o-interven%C3%A7%C3%A3o-e-aprendizagem" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <a href="https://www.facebook.com/people/CRIA-Centro-de-Reabilita%C3%A7%C3%A3o-Interven%C3%A7%C3%A3o-e-Aprendizagem/61582486635142/?sk=about" aria-label="Facebook" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/company/cria-centro-de-reabilita%C3%A7%C3%A3o-interven%C3%A7%C3%A3o-e-aprendizagem" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
               </a>
             </div>
@@ -257,7 +262,7 @@
             </div>
             <div class="footer__contact-item">
               <strong>Email:</strong>
-              <a href="mailto:cria.terapias@gmail.com">cria.terapias@gmail.com</a>
+              <a href="mailto:geral@centrocria.pt">geral@centrocria.pt</a>
             </div>
           </div>
 

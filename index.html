@@ -14,6 +14,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="O Centro CRIA é um centro de neurodesenvolvimento que utiliza uma intervenção multidisciplinar, baseada em diferentes metodologias (ABA - Applied Behavior Analysis, DIR Floortime, PRT - Pivotal response treatment, ESDM - Early Start Denver Model, Estimulação Sensorial), oferecendo ainda serviços de psicologia, psicomotricidade, terapia da fala, terapia ocupacional e apoio ao desenvolvimento infantil, visando promover o bem-estar e o desenvolvimento de crianças e jovens com perturbações do neurodesenvolvimento ou dificuldades de aprendizagem (PEA - Perturbação do Espetro do Autismo, PHDA - Perturbação de Hiperatividade e Défice de Atenção, POD - Perturbação de Oposição e Desafio, Perturbação da Linguagem, Dislexia, Discalculia, Disortografia, Atraso Global do Desenvolvimento, Dispraxia, ...).">
     <meta name="author" content="CRIA - Centro de Reabilitação, Intervenção e Aprendizagem, Lda">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="CRIA | Centro de Reabilitação, Intervenção e Aprendizagem">
+    <meta property="og:description" content="Intervenção transdisciplinar no neurodesenvolvimento — Lisboa">
+    <meta property="og:image" content="https://centrocria.pt/images/og-image.jpg">
+    <meta property="og:url" content="https://centrocria.pt">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
     <title>CRIA | Centro de Reabilitação, Intervenção e Aprendizagem</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,13 +41,14 @@
     <nav class="navbar" role="navigation" aria-label="Navegação principal">
       <div class="container navbar__inner">
         <a href="index.html" class="navbar__brand" aria-label="CRIA - Página inicial">
-          <img src="images/download.png" alt="CRIA Logo" width="44" height="44">
+          <img src="images/download.png" alt="Logotipo CRIA - Centro de Reabilitação, Intervenção e Aprendizagem" width="44" height="44">
         </a>
 
         <div class="navbar__links">
           <a href="#home">CRIA</a>
           <a href="#sobre">Sobre</a>
           <a href="#servicos">Serviços</a>
+          <a href="eventos.html#atual">Iniciativas</a>
           <a href="#reviews">Testemunhos</a>
           <a href="#contacts">Contactos</a>
         </div>
@@ -49,15 +59,19 @@
           <span></span>
         </button>
       </div>
-
-      <div class="navbar__mobile" role="dialog" aria-label="Menu de navegação">
-        <a href="#home">CRIA</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#reviews">Testemunhos</a>
-        <a href="#contacts">Contactos</a>
-      </div>
     </nav>
+
+    <!-- Mobile menu is intentionally outside <nav> so that navbar's
+         backdrop-filter does not create a new containing block for this
+         fixed overlay, which would prevent it from covering the viewport. -->
+    <div class="navbar__mobile" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+      <a href="#home">CRIA</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="eventos.html#atual">Iniciativas</a>
+      <a href="#reviews">Testemunhos</a>
+      <a href="#contacts">Contactos</a>
+    </div>
 
     <main>
       <!-- Hero Section -->
@@ -100,7 +114,7 @@
                 <p>Uma abordagem <b>liderada pela motivação</b>, que procura incentivar a criança a alcançar o seu potencial máximo.</p>
                 <p>Uma <b>visão integral</b> que reconhece a importância do desenvolvimento progressivo de todas as áreas para uma aprendizagem integral e holística.</p>
                 <p>Uma <b>relação sinérgica com a família e escola</b> que promove a participação ativa de todos os intervenientes na vida da criança, procurando uma colaboração em tríade.</p>
-                <p>A utilização de <b>métodos de eficácia comprovada</b> para uma intervenção baseada em evidências ciêntificas, garantindo a qualidade das aprendizagens e do desenvolvimento.</p>
+                <p>A utilização de <b>métodos de eficácia comprovada</b> para uma intervenção baseada em evidências científicas, garantindo a qualidade das aprendizagens e do desenvolvimento.</p>
               </div>
               <a href="sobre.html#sobre" class="btn btn--outline-dark mt-2">Conheça-nos melhor</a>
             </div>
@@ -116,63 +130,63 @@
           </div>
 
           <div class="services__grid">
-            <div class="service-card fade-in">
+            <a class="service-card fade-in" href="servicos.html#intervencao-transdisciplinar">
               <div class="service-card__header">
                 <h3>Intervenção Transdisciplinar</h3>
                 <span class="service-card__badge">Recomendado</span>
               </div>
               <p>Desenvolvimento integral através de uma intervenção baseada em ABA, Floortime, Estimulação Sensorial, PECS</p>
-            </div>
+            </a>
 
-            <div class="service-card fade-in">
+            <a class="service-card fade-in" href="servicos.html#psicologia">
               <div class="service-card__header">
                 <h3>Psicologia</h3>
               </div>
               <p>Uma ciência que estuda o comportamento humano e os processos mentais a fim de promover a saúde e o bem-estar psicológico</p>
-            </div>
+            </a>
 
-            <div class="service-card fade-in">
+            <a class="service-card fade-in" href="servicos.html#contexto-escolar">
               <div class="service-card__header">
                 <h3>Intervenção em Contexto Escolar</h3>
               </div>
               <p>Desenvolvimento de competências académicas e psicopedagógicas, sociais e de autonomia para adaptação e integração em contexto escolar</p>
-            </div>
+            </a>
 
-            <div class="service-card fade-in">
+            <a class="service-card fade-in" href="servicos.html#psicomotricidade">
               <div class="service-card__header">
                 <h3>Psicomotricidade</h3>
               </div>
               <p>Intervenção interdisciplinar baseada na relação entre os aspetos cognitivos e motores do desenvolvimento humano</p>
-            </div>
+            </a>
 
-            <div class="service-card fade-in">
+            <a class="service-card fade-in" href="servicos.html#autonomia-funcionalidade">
               <div class="service-card__header">
                 <h3>Autonomia e Funcionalidade</h3>
               </div>
               <p>Promoção de autonomia, atividades da vida diária, integração e participação ativa, adaptação aos contextos e transição para a vida adulta</p>
-            </div>
+            </a>
 
-            <div class="service-card fade-in">
+            <a class="service-card fade-in" href="servicos.html#terapia-fala">
               <div class="service-card__header">
                 <h3>Terapia da Fala</h3>
               </div>
               <p>Avaliação, diagnóstico e intervenção na comunicação, fala, motricidade oro-facial e/ou alimentação</p>
-            </div>
+            </a>
 
-            <div class="service-card fade-in">
+            <a class="service-card fade-in" href="servicos.html#acompanhamento-psicopedagogico">
               <div class="service-card__header">
                 <h3>Acompanhamento Psicopedagógico</h3>
               </div>
               <p>Desenvolvimento de competências cognitivas, pedagógicas e funções executivas</p>
-            </div>
+            </a>
 
-            <div class="service-card fade-in">
+            <a class="service-card fade-in" href="servicos.html#aconselhamento-parental">
               <div class="service-card__header">
                 <h3>Aconselhamento Parental</h3>
                 <span class="service-card__badge">Recomendado</span>
               </div>
               <p>Apoio e orientação às famílias para a sua capacitação, através da partilha de estratégias e ferramentas práticas</p>
-            </div>
+            </a>
           </div>
 
           <div class="text-center mt-2 fade-in">
@@ -188,51 +202,171 @@
             <h2>Testemunhos</h2>
           </div>
 
-          <div class="testimonials__grid">
-            <div class="testimonial-card fade-in">
-              <div class="testimonial-card__header">
-                <img src="images/reviews/avatar1.png" alt="Margarida V." class="testimonial-card__avatar">
-                <div class="testimonial-card__info">
-                  <h4>Margarida V.</h4>
-                  <em>Professora</em>
-                  <span class="testimonial-service">Intervenção em Contexto Escolar</span>
-                </div>
-              </div>
-              <div class="testimonial-card__quote">
-                <p>Sou professora numa escola onde a equipa CRIA acompanha há já uns anos alguns alunos.
-São uma equipa maravilhosa! Têm desenvolvido um trabalho excecional do qual resulta uma evolução extremamente positiva nas crianças, tanto no domínio pessoal/social como no domínio académico.
-Praticam uma avaliação contínua dos progressos das crianças, destacando as suas potencialidades/necessidades e adequando objetivos e estratégias. Esta avaliação é partilhada e analisada em conjunto com a escola e a família.
-Desenvolvem um trabalho em parceria com os professores, ajudando-nos de forma incondicional a fazer o melhor pelas crianças (Não apenas as crianças que apoiam diretamente, mas todos os alunos da turma.) Estão integradas na escola, interagindo com todos os docentes, não docentes e alunos. Fazem parte da nossa "família "!
-Tenho ainda de destacar o excelente trabalho que desenvolvem com as famílias.</p>
-              </div>
-            </div>
+          <div class="carousel fade-in">
+            <div class="carousel__track">
 
-            <div class="testimonial-card fade-in">
-              <div class="testimonial-card__header">
-                <img src="images/reviews/avatar3.png" alt="Colaborador" class="testimonial-card__avatar">
-                <div class="testimonial-card__info">
-                  <h4>Colaborador</h4>
+              <div class="carousel__slide">
+                <div class="testimonial-card" data-length="long">
+                  <svg class="testimonial-card__quote-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+                  <p class="testimonial-card__text">Sou professora numa escola onde a equipa CRIA acompanha há já uns anos alguns alunos. São uma equipa maravilhosa! Têm desenvolvido um trabalho excecional do qual resulta uma evolução extremamente positiva nas crianças, tanto no domínio pessoal/social como no domínio académico. Praticam uma avaliação contínua dos progressos das crianças, destacando as suas potencialidades/necessidades e adequando objetivos e estratégias. Esta avaliação é partilhada e analisada em conjunto com a escola e a família. Desenvolvem um trabalho em parceria com os professores, ajudando-nos de forma incondicional a fazer o melhor pelas crianças (Não apenas as crianças que apoiam diretamente, mas todas os alunos da turma.) Estão integradas na escola, interagindo com todos os docentes, não docentes e alunos. Fazem parte da nossa "família".) Tenho ainda de destacar o excelente trabalho que desenvolvem com as famílias.</p>
+                  <div class="testimonial-card__footer">
+                    <span class="testimonial-card__author">Margarida</span>
+                    <span class="testimonial-card__role">Intervenção em Contexto Escolar</span>
+                  </div>
                 </div>
               </div>
-              <div class="testimonial-card__quote">
-                <p>Desde o trabalho lado a lado com as famílias e à inclusão dos diferentes contextos dos jovens, o que mais me fascina no CRIA é o compromisso, valorização e empenho na evolução de cada criança! </p>
-              </div>
-            </div>
 
-            <div class="testimonial-card fade-in">
-              <div class="testimonial-card__header">
-                <img src="images/reviews/avatar2.png" alt="Renata C." class="testimonial-card__avatar">
-                <div class="testimonial-card__info">
-                  <h4>Renata C.</h4>
-                  <em>Educadora</em>
-                  <span class="testimonial-service">Intervenção em Contexto Escolar</span>
+              <div class="carousel__slide">
+                <div class="testimonial-card">
+                  <svg class="testimonial-card__quote-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+                  <p class="testimonial-card__text">Desde o trabalho lado a lado com as famílias e à inclusão dos diferentes contextos dos jovens, o que mais me fascina no CRIA é o compromisso, valorização e empenho na evolução de cada criança!</p>
+                  <div class="testimonial-card__footer">
+                    <span class="testimonial-card__author">A.</span>
+                    <span class="testimonial-card__role">Colaborador</span>
+                  </div>
                 </div>
               </div>
-              <div class="testimonial-card__quote">
-                <p>Tive a oportunidade de trabalhar diariamente com as profissionais do CRIA e é de valorizar a dedicação, qualidade e profissionalismo das mesmas. A equipa é muito organizada e eficiente em planear, executar, analisar e rever práticas, quando necessário, de forma a priorizar sempre o bem-estar e a evolução de suas crianças.</p>
+
+              <div class="carousel__slide">
+                <div class="testimonial-card" data-length="long">
+                  <svg class="testimonial-card__quote-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+                  <p class="testimonial-card__text">O CRIA, em especial as suas proprietárias, tem realizado um trabalho incansável, apaixonado e essencial para o desenvolvimento do nosso filho. O acompanhamento diário que ele recebe tem feito uma diferença extraordinária em sua vida. A atenção, o carinho e a expertise do CRIA não apenas ajudam no crescimento dele, mas também nos dão a tranquilidade de saber que ele está em boas mãos. O impacto positivo que vocês têm na vida das crianças e suas famílias é inestimável. Vocês são, sem dúvida, peças fundamentais nesse processo e não poderíamos estar mais agradecidos por tudo que fazem. Continuem com esse trabalho maravilhoso que transforma vidas e proporciona um futuro melhor para nossos filhos.</p>
+                  <div class="testimonial-card__footer">
+                    <span class="testimonial-card__author">Patrícia</span>
+                    <span class="testimonial-card__role">Família</span>
+                  </div>
+                </div>
               </div>
+
+              <div class="carousel__slide">
+                <div class="testimonial-card">
+                  <svg class="testimonial-card__quote-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+                  <p class="testimonial-card__text">Tive a oportunidade de trabalhar diariamente com as profissionais do CRIA e é de valorizar a dedicação, qualidade e profissionalismo das mesmas. A equipa é muito organizada e eficiente em planear, executar, analisar e rever práticas, quando necessário, de forma a priorizar sempre o bem-estar e a evolução de suas crianças.</p>
+                  <div class="testimonial-card__footer">
+                    <span class="testimonial-card__author">Renata</span>
+                    <span class="testimonial-card__role">Intervenção em Contexto Escolar</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel__slide">
+                <div class="testimonial-card">
+                  <svg class="testimonial-card__quote-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+                  <p class="testimonial-card__text">Só temos elogios a toda equipa do Cria pelo excelente trabalho que vem sendo feito com a nossa filha.</p>
+                  <div class="testimonial-card__footer">
+                    <span class="testimonial-card__author">Giselle</span>
+                    <span class="testimonial-card__role">Família</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel__slide">
+                <div class="testimonial-card" data-length="long">
+                  <svg class="testimonial-card__quote-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/></svg>
+                  <p class="testimonial-card__text">O CRIA tem sido fundamental no desenvolvimento do nosso filho, pela dedicação constante e muito atenta da Sónia e da Mariana que nunca desistem apesar das dificuldades e são as primeiras a realçar as capacidades do João mesmo quando os pais e a escola não acreditam que se possa ir mais longe. É muito importante poder acreditar e lutar, não baixar os braços e acreditar no futuro sempre melhor e sem limites para as nossas crianças. Muito obrigada CRIA! Não sei o que faríamos sem vocês!</p>
+                  <div class="testimonial-card__footer">
+                    <span class="testimonial-card__author">S.</span>
+                    <span class="testimonial-card__role">Família</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="carousel__nav">
+              <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <div class="carousel__dots"></div>
+              <button class="carousel__btn carousel__btn--next" aria-label="Seguinte">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Instagram Section
+           To update: change data-shortcode, href, and img src for each post -->
+      <section class="section ig-section" id="social">
+        <canvas class="ig-section__canvas" aria-hidden="true"></canvas>
+        <div class="container">
+
+          <div class="ig-header fade-in">
+            <div class="ig-header__left">
+              <span class="ig-header__eyebrow">Siga-nos</span>
+              <h2 class="ig-header__title">O nosso Instagram</h2>
+              <p class="ig-header__subtitle">Acompanhe o nosso dia&#8209;a&#8209;dia e as novidades do CRIA.</p>
+            </div>
+            <div class="ig-header__profile">
+              <a href="https://www.instagram.com/centro.cria" class="ig-profile-card" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil @centro.cria no Instagram">
+                <div class="ig-profile-card__ring">
+                  <img src="images/download.png" alt="Logotipo CRIA" class="ig-profile-card__avatar" width="56" height="56" loading="lazy">
+                </div>
+                <div class="ig-profile-card__text">
+                  <span class="ig-profile-card__handle">@centro.cria</span>
+                  <span class="ig-profile-card__name">Centro CRIA · Lisboa</span>
+                </div>
+                <span class="ig-profile-card__follow" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  Seguir
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="ig-grid fade-in" role="list">
+            <a class="ig-post ig-post--featured" data-shortcode="DJ9z4g4obN4" href="https://www.instagram.com/p/DJ9z4g4obN4/" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Ver publicação no Instagram">
+              <div class="ig-post__media">
+                <img src="images/instagram/1.jpg" alt="Publicação Instagram @centro.cria" class="ig-post__img" loading="lazy">
+              </div>
+              <div class="ig-post__overlay"><div class="ig-post__overlay-inner">
+                <svg class="ig-post__overlay-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <span class="ig-post__overlay-label">Ver no Instagram</span>
+              </div></div>
+              <div class="ig-post__shine"></div>
+            </a>
+
+            <a class="ig-post" data-shortcode="DKSJ9pKIl0l" href="https://www.instagram.com/p/DKSJ9pKIl0l/" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Ver publicação no Instagram">
+              <div class="ig-post__media">
+                <img src="images/instagram/2.jpg" alt="Publicação Instagram @centro.cria" class="ig-post__img" loading="lazy">
+              </div>
+              <div class="ig-post__overlay"><div class="ig-post__overlay-inner">
+                <svg class="ig-post__overlay-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="28" height="28"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div></div>
+              <div class="ig-post__shine"></div>
+            </a>
+
+            <a class="ig-post" data-shortcode="DJ4pfEqotd5" href="https://www.instagram.com/p/DJ4pfEqotd5/" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Ver publicação no Instagram">
+              <div class="ig-post__media">
+                <img src="images/instagram/3.jpg" alt="Publicação Instagram @centro.cria" class="ig-post__img" loading="lazy">
+              </div>
+              <div class="ig-post__overlay"><div class="ig-post__overlay-inner">
+                <svg class="ig-post__overlay-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="28" height="28"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div></div>
+              <div class="ig-post__shine"></div>
+            </a>
+
+            <a class="ig-post" data-shortcode="DIj8a06oTQS" href="https://www.instagram.com/p/DIj8a06oTQS/" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Ver publicação no Instagram">
+              <div class="ig-post__media">
+                <img src="images/instagram/4.jpg" alt="Publicação Instagram @centro.cria" class="ig-post__img" loading="lazy">
+              </div>
+              <div class="ig-post__overlay"><div class="ig-post__overlay-inner">
+                <svg class="ig-post__overlay-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="28" height="28"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div></div>
+              <div class="ig-post__shine"></div>
+            </a>
+          </div>
+
+          <div class="ig-cta fade-in">
+            <a href="https://www.instagram.com/centro.cria" class="ig-cta__link" target="_blank" rel="noopener noreferrer">
+              <span class="ig-cta__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </span>
+              Ver mais no Instagram
+              <svg class="ig-cta__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
         </div>
       </section>
 
@@ -268,7 +402,7 @@ Tenho ainda de destacar o excelente trabalho que desenvolvem com as famílias.</
             </div>
 
             <div class="contact__map fade-in-right">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d99658.90588785891!2d-9.306876958844441!3d38.686969243543984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1711191496552!5m2!1spt-PT!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização CRIA"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d99658.90588785891!2d-9.306876958844441!3d38.686969243543984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1711191496552!5m2!1spt-PT!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Área de atuação"></iframe>
             </div>
           </div>
         </div>
@@ -289,7 +423,10 @@ Tenho ainda de destacar o excelente trabalho que desenvolvem com as famílias.</
               <a href="https://www.instagram.com/centro.cria" aria-label="Instagram" target="_blank" rel="noopener">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               </a>
-              <a href="https://www.linkedin.com/company/cria-centro-de-reabilita%C3%A7%C3%A3o-interven%C3%A7%C3%A3o-e-aprendizagem" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <a href="https://www.facebook.com/people/CRIA-Centro-de-Reabilita%C3%A7%C3%A3o-Interven%C3%A7%C3%A3o-e-Aprendizagem/61582486635142/?sk=about" aria-label="Facebook" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/company/cria-centro-de-reabilita%C3%A7%C3%A3o-interven%C3%A7%C3%A3o-e-aprendizagem" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
               </a>
             </div>
@@ -304,7 +441,7 @@ Tenho ainda de destacar o excelente trabalho que desenvolvem com as famílias.</
             </div>
             <div class="footer__contact-item">
               <strong>Email:</strong>
-              <a href="mailto:cria.terapias@gmail.com">cria.terapias@gmail.com</a>
+              <a href="mailto:geral@centrocria.pt">geral@centrocria.pt</a>
             </div>
           </div>
 
