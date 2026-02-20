@@ -1400,6 +1400,12 @@ b, strong {
   color: var(--color-text);
 }
 
+.evento-block__content p u {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
 .evento-block__content > p {
   color: var(--color-text-light);
 }
@@ -1901,3 +1907,4 @@ b, strong {
     padding: 1.5rem;
   }
 }
+
