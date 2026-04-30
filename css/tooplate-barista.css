@@ -1278,6 +1278,16 @@ article {
 	color: black;
 }
 
+.footer-cookie-link {
+  color: #2bb8a6 !important;
+  text-decoration: none;
+}
+
+.footer-cookie-link:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
 /*---------------------------------------
   EVENTOS               
 -----------------------------------------*/
