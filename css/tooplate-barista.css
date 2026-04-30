@@ -1500,21 +1500,6 @@ button:hover {
   display: block;
 }
 
-#CookiebotWidget a {
-  color: #ffffff !important;
-  border-bottom: 1px solid transparent;
-  transition: all 0.2s ease;
-}
-
-#CookiebotWidget a:hover {
-  color: #ffffff !important;
-  border-bottom: 1px solid #ffffff;
-}
-
-#CookiebotWidget button:hover {
-  color: #cccccc !important;
-}
-
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
