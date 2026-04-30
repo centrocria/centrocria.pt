@@ -1500,18 +1500,15 @@ button:hover {
   display: block;
 }
 
-#CookiebotWidget a,
-#CookiebotWidget button {
-  color: #2bb8a6 !important; /* verde/água do site */
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  text-decoration: none !important;
+#CookiebotWidget a {
+  color: #2bb8a6 !important;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
 }
 
-#CookiebotWidget a:hover,
-#CookiebotWidget button:hover {
+#CookiebotWidget a:hover {
   color: #ffffff !important;
-  text-decoration: underline !important;
+  border-bottom: 1px solid #ffffff;
 }
 
 #CookiebotWidget button:hover {
