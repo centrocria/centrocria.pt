@@ -1500,6 +1500,27 @@ button:hover {
   display: block;
 }
 
+#CookiebotWidget {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  bottom: 20px !important;
+  left: 20px !important;
+}
+
+#CookiebotWidget button {
+  background-color: transparent !important;
+  color: #ffffff !important; /* ajusta à cor do footer */
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  text-decoration: underline !important;
+  border: none !important;
+}
+
+#CookiebotWidget button:hover {
+  color: #cccccc !important;
+}
 
 /*---------------------------------------
   RESPONSIVE STYLES               
