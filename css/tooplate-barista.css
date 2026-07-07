@@ -1696,7 +1696,18 @@ button:hover {
 }
 
 
+#cc-main {
+    font-size: 13px;
+}
 
+#cc-main .cm {
+    padding: 8px 16px;
+}
+
+#cc-main .cm__btn {
+    padding: 6px 12px;
+    font-size: 12px;
+}
 
 
 
