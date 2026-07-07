@@ -1695,24 +1695,43 @@ button:hover {
   }
 }
 
-
-#cc-main {
-    font-size: 13px;
+/*---------------------------------------
+			COOKIES 
+-----------------------------------------*/
+#cc-main{
+    font-size:14px !important;
 }
 
-#cc-main .cm {
-    padding: 8px 16px;
+#cc-main .cm{
+    max-width:700px;
+    margin:0 auto 20px auto !important;
+    border-radius:12px;
+    box-shadow:0 8px 30px rgba(0,0,0,.15);
 }
 
-#cc-main .cm__btn {
-    padding: 6px 12px;
-    font-size: 12px;
+#cc-main .cm__title{
+    font-size:18px;
 }
 
+#cc-main .cm__desc{
+    font-size:14px;
+    line-height:1.5;
+}
 
+#cc-main .cm__btn{
+    border-radius:8px;
+    padding:10px 18px;
+}
 
+#open_preferences_center{
+    font-size:14px;
+    color:#666;
+    text-decoration:none;
+}
 
-
+#open_preferences_center:hover{
+    text-decoration:underline;
+}
 
 
 
