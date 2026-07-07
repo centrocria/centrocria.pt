@@ -1698,79 +1698,140 @@ button:hover {
 /*---------------------------------------
 			COOKIES 
 -----------------------------------------*/
-#cc-main .cm{
-    width:370px !important;
+.cc-nb-main-container{
+
+    position:fixed !important;
+
+    right:24px !important;
+    bottom:24px !important;
+
+    width:360px !important;
     max-width:calc(100vw - 30px);
 
-    right:20px !important;
-    bottom:20px !important;
-
-    padding:20px !important;
+    padding:22px !important;
 
     border-radius:18px !important;
 
     background:rgba(255,255,255,.88) !important;
 
-    backdrop-filter:blur(14px);
-    -webkit-backdrop-filter:blur(14px);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
 
-    border:1px solid rgba(255,255,255,.4);
+    border:1px solid rgba(255,255,255,.35);
 
-    box-shadow:0 12px 40px rgba(0,0,0,.12);
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+    z-index:999999;
 
     font-family:inherit;
 }
 
+
 /* título */
 
-#cc-main .cm__title{
-    font-size:17px;
-    font-weight:600;
-    margin-bottom:10px;
+.cc-nb-title{
+
+    font-size:18px !important;
+
+    font-weight:600 !important;
+
+    margin-bottom:12px !important;
+
 }
+
 
 /* texto */
 
-#cc-main .cm__desc{
-    font-size:13px;
-    line-height:1.55;
-    color:#666;
+.cc-nb-text{
+
+    font-size:13px !important;
+
+    line-height:1.6 !important;
+
+    color:#666 !important;
+
 }
 
-/* botões */
 
-#cc-main .cm__btn{
+/* zona dos botões */
+
+.cc-nb-buttons-container{
+
+    margin-top:18px !important;
+
+}
+
+
+/* todos os botões */
+
+.cc-nb-buttons-container button{
+
     border-radius:10px !important;
+
     padding:10px 18px !important;
-    font-size:13px;
+
+    font-size:13px !important;
+
     transition:.25s;
+
 }
 
-#cc-main .cm__btn:hover{
+
+/* aceitar */
+
+.cc-nb-okagree{
+
+    background:#6F8F87 !important;
+
+    color:#fff !important;
+
+}
+
+
+/* rejeitar */
+
+.cc-nb-reject{
+
+    background:#ececec !important;
+
+    color:#444 !important;
+
+}
+
+
+/* preferências */
+
+.cc-nb-changep{
+
+    background:transparent !important;
+
+    color:#666 !important;
+
+}
+
+
+/* hover */
+
+.cc-nb-buttons-container button:hover{
+
     transform:translateY(-1px);
+
 }
 
-/* botão aceitar */
-
-#cc-main .cm__btn--primary{
-    background:#7b9c92 !important;
-}
-
-/* botão rejeitar */
-
-#cc-main .cm__btn--secondary{
-    background:#f5f5f5 !important;
-}
 
 /* mobile */
 
-@media (max-width:600px){
+@media(max-width:600px){
 
-#cc-main .cm{
-    width:calc(100vw - 20px);
-    right:10px !important;
-    left:10px !important;
-    bottom:10px !important;
+.cc-nb-main-container{
+
+    left:12px !important;
+    right:12px !important;
+
+    width:auto !important;
+
+    bottom:12px !important;
+
 }
 
 }
