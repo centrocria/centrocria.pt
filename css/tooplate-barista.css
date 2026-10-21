@@ -1283,46 +1283,58 @@ article {
   IEFP               
 -----------------------------------------*/
 
-  .cria-financiamento {
+.cria-rodape-final {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 12px 24px !important;
+    width: 100% !important;
+  }
+  .cria-iefp {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin: 0 0 0 auto !important;
+    padding: 0 !important;
     background: none !important;
-    border-top: 0 !important;
-    padding: 14px 0 0 !important;
+    border: 0 !important;
   }
-  .cria-financiamento__inner {
-    justify-content: flex-start !important;
-    margin: 0 !important;
-  }
-
-  /* cartão branco: o texto do logótipo é escuro e não se lê sobre o fundo do rodapé */
-  .cria-financiamento__card {
+  .cria-iefp__card {
     display: inline-flex !important;
+    align-items: center !important;
     background: #ffffff !important;
-    padding: 5px 9px !important;
-    border-radius: 6px;
+    padding: 4px 8px !important;
+    border-radius: 6px !important;
     line-height: 0 !important;
   }
-  .cria-financiamento__logo {
+  .cria-iefp__logo {
     display: block !important;
-    height: 26px !important;           /* TAMANHO DO LOGÓTIPO — mudar só este valor */
+    height: 30px !important;           /* TAMANHO DO LOGÓTIPO */
     width: auto !important;
     max-width: none !important;
-  }
-  .cria-financiamento__texto {
     margin: 0 !important;
-    font-size: 12px !important;        /* TAMANHO DO TEXTO */
+  }
+  .cria-iefp__texto {
+    margin: 0 !important;
+    font-size: 13px !important;        /* TAMANHO DO TEXTO */
     line-height: 1.4 !important;
     color: rgba(255, 255, 255, 0.65) !important;
+    white-space: nowrap !important;
   }
-  .cria-financiamento__texto a {
+  .cria-iefp__texto a {
     color: inherit !important;
     font-size: inherit !important;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    white-space: nowrap;
+    text-decoration: underline !important;
+    text-underline-offset: 2px !important;
   }
-  .cria-financiamento__texto a:hover,
-  .cria-financiamento__texto a:focus-visible {
+  .cria-iefp__texto a:hover,
+  .cria-iefp__texto a:focus-visible {
     color: #ffffff !important;
+  }
+  @media (max-width: 600px) {
+    .cria-iefp { margin: 0 !important; }
+    .cria-iefp__texto { white-space: normal !important; }
   }
 
 /*---------------------------------------
