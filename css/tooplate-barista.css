@@ -1297,28 +1297,27 @@ article {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 12px 24px;
+    gap: 12px 20px;
   }
-  /* "cartão" branco para os logótipos, com folga à volta */
+  /* "cartão" branco para o logótipo, com folga à volta */
   .cria-financiamento__card {
     display: inline-flex;
     background: #ffffff;
-    padding: 10px 18px;
+    padding: 8px 14px;
     border-radius: 8px;
     line-height: 0;
   }
-  .cria-financiamento__logos {
+  .cria-financiamento__logo {
     display: block;
-    height: 44px;                      /* altura fixa = aspeto consistente */
+    height: 48px;                      /* altura fixa = aspeto consistente */
     width: auto;
-    max-width: 100%;
   }
   .cria-financiamento__texto {
     margin: 0;
     font-size: 0.8125rem !important;   /* impede que herde o tamanho grande do rodapé */
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.7);
-    text-align: center;
+    text-align: left;
   }
   .cria-financiamento__texto a {
     color: inherit;
@@ -1331,9 +1330,9 @@ article {
     color: #ffffff;
   }
   @media (max-width: 600px) {
-    .cria-financiamento__logos { height: 36px; }
+    .cria-financiamento__logo { height: 40px; }
+    .cria-financiamento__texto { text-align: center; }
   }
-
 /*---------------------------------------
   EVENTOS               
 -----------------------------------------*/
