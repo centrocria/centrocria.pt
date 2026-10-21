@@ -1284,7 +1284,9 @@ article {
 -----------------------------------------*/
 
 .cria-rodape-final {
+    grid-column: 1 / -1 !important;
     display: flex !important;
+	display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
     flex-wrap: wrap !important;
