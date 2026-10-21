@@ -1328,7 +1328,6 @@ article {
     color: inherit !important;
     font-size: inherit !important;
     text-decoration: none !important;
-    text-underline-offset: 2px !important;
   }
   .cria-iefp__texto a:hover,
   .cria-iefp__texto a:focus-visible {
