@@ -1325,7 +1325,7 @@ article {
   .cria-iefp__texto a {
     color: inherit !important;
     font-size: inherit !important;
-    text-decoration: underline !important;
+    text-decoration: none !important;
     text-underline-offset: 2px !important;
   }
   .cria-iefp__texto a:hover,
